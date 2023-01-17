@@ -65,7 +65,7 @@ $(document).on('ready', () => {
         
           $.ajax({
             type: 'POST',
-            url: '/assets/php/form.php',
+            url: '/test/assets/php/form.php',
             data: th,
           }).done(function() {
             console.log(th);
