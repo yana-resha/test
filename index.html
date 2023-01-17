@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar__container">
+      <div class="sidebar__title">Меню</div>
+      <ul class="sidebar__list list-no-marker">
+        <li class="sidebar__list-part">
+          <a class="sidebar__list-part-link link" href="#">Пункт 1</a>
+        </li>
+        <li class="sidebar__list-part">
+          <a class="sidebar__list-part-link link" href="#">Пункт 2</a>
+        </li>
+        <li class="sidebar__list-part">
+          <a class="sidebar__list-part-link link" href="#">Пункт 3</a>
+        </li>
+        <li class="sidebar__list-part">
+          <a class="sidebar__list-part-link link" href="#">Пункт 4</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="for-grid">
+    <header class="header">
+      <div class="container header__container">
+        <input class="header__search" type="text" placeholder="поиск">
+      </div>
+    </header>
+    <main>
+      <section class="content">
+        <div class="container">
+          <div class="content__table-container">
+            <form action="./assets/php/form.php" method="post" id="table-form"></form>
+            <table class="content__table">
+              <thead>
+                <tr class="content__table-row">
+                  <th class="content__table-column">ФИО</th>
+                  <th class="content__table-column">Должность</th>
+                  <th class="content__table-column">Возраст</th>
+                  <th class="content__table-column">Компетенции</th>
+                </tr>
+                <tr class="content__table-row">
+                  <th class="content__table-column">
+                    <input class="content__form-input input" type="text" name="name" aria-label="введите ФИО" form="table-form">
+                    <div class="content__form-input-error"></div>
+                  </th>
+                  <th class="content__table-column">
+                    <select class="content__form-input input" name="vacation" aria-label="выберите должность" form="table-form">
+                      <option>Менеджер</option>
+                      <option>Экономист</option>
+                      <option>Кассир</option>
+                    </select>
+                    <div class="content__form-input-error"></div>
+                  </th>
+                  <th class="content__table-column">
+                    <input class="content__form-input input input-number" name="age" type="number" aria-label="введите возраст" form="table-form">
+                    <div class="content__form-input-error"></div>
+                  </th>
+                  <th class="content__table-column">
+                    <textarea class="content__form-input input textaria" name="competence" aria-label="укажите компетенции" form="table-form"></textarea>
+                    <div class="content__form-input-error"></div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="content__table-row">
+                  <td class="content__table-column">jkjkj</td>
+                  <td class="content__table-column">jkjjk</td>
+                  <td class="content__table-column">jkjkjk</td>
+                  <td class="content__table-column">jkjjk</td>
+                </tr>
+                <tr class="content__table-row">
+                  <td class="content__table-column">jkjkj</td>
+                  <td class="content__table-column">jkjjk</td>
+                  <td class="content__table-column">jkjkjk</td>
+                  <td class="content__table-column">jkjjk</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="content__btn-container">
+              <button class="btn content__table-btn content__form-submit" form="table-form">Отправить</button>
+              
+              <div class="content__table-btn-container">
+                <button class="btn content__table-btn btn-add">Добавить</button>
+                <button class="btn content__table-btn btn-remove">Удалить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script language="php">
+    </script>
+    <footer class="footer"></footer>
+  </div>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/form.js"></script>
+</body>
+</html>
