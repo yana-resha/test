@@ -1,0 +1,134 @@
+@-webkit-keyframes burgerOpen {
+  0% {
+    display: none;
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes burgerOpen {
+  0% {
+    display: none;
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes burgerClose {
+  0% {
+    display: block;
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  1% {
+    display: block;
+    opacity: 1;
+    transform: translateX(-1%);
+  }
+  99% {
+    display: block;
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+@keyframes burgerClose {
+  0% {
+    display: block;
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  1% {
+    display: block;
+    opacity: 1;
+    transform: translateX(-1%);
+  }
+  99% {
+    display: block;
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes alertOpen {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes alertOpen {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes alertClose {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  50% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes alertClose {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  50% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}/*# sourceMappingURL=keyframes.css.map */

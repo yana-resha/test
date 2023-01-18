@@ -30,6 +30,7 @@
   <div class="for-grid">
     <header class="header">
       <div class="container header__container">
+        <button class="header__sidebar-burger btn">Меню</button>
         <input class="header__search" type="text" placeholder="поиск">
       </div>
     </header>
@@ -37,7 +38,7 @@
       <section class="content">
         <div class="container">
           <div class="content__table-container">
-            <form action="/test/assets/php/form.php" method="post" id="table-form"></form>
+            <form action="/assets/php/form.php" method="post" id="table-form"></form>
             <table class="content__table">
               <thead>
                 <tr class="content__table-row">
@@ -48,7 +49,7 @@
                 </tr>
                 <tr class="content__table-row">
                   <th class="content__table-column">
-                    <input class="content__form-input input" type="text" name="name" aria-label="введите ФИО" form="table-form">
+                    <input class="content__form-input input" type="text" name="initials" aria-label="введите ФИО" form="table-form">
                     <div class="content__form-input-error"></div>
                   </th>
                   <th class="content__table-column">
@@ -60,7 +61,7 @@
                     <div class="content__form-input-error"></div>
                   </th>
                   <th class="content__table-column">
-                    <input class="content__form-input input input-number" name="age" type="number" aria-label="введите возраст" form="table-form">
+                    <input class="content__form-input input input-number"  name="age" type="number" aria-label="введите возраст" form="table-form">
                     <div class="content__form-input-error"></div>
                   </th>
                   <th class="content__table-column">
@@ -69,39 +70,44 @@
                   </th>
                 </tr>
               </thead>
-              <tbody>
-                <tr class="content__table-row">
-                  <td class="content__table-column">jkjkj</td>
-                  <td class="content__table-column">jkjjk</td>
-                  <td class="content__table-column">jkjkjk</td>
-                  <td class="content__table-column">jkjjk</td>
-                </tr>
-                <tr class="content__table-row">
-                  <td class="content__table-column">jkjkj</td>
-                  <td class="content__table-column">jkjjk</td>
-                  <td class="content__table-column">jkjkjk</td>
-                  <td class="content__table-column">jkjjk</td>
-                </tr>
+              <tbody> 
               </tbody>
             </table>
-            <div class="content__btn-container">
-              <button class="btn content__table-btn content__form-submit" form="table-form">Отправить</button>
-              
-              <div class="content__table-btn-container">
-                <button class="btn content__table-btn btn-add">Добавить</button>
-                <button class="btn content__table-btn btn-remove">Удалить</button>
-              </div>
+            <div class="content__table-error"></div>
+          </div>
+          <div class="content__btn-container">
+            <button class="btn content__table-btn content__form-submit" form="table-form">Отправить</button>
+            <div class="content__table-btn-container">
+              <button class="btn content__table-btn btn-add">Добавить</button>
+              <button class="btn content__table-btn btn-remove">Удалить</button>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <script language="php">
-    </script>
     <footer class="footer"></footer>
+  </div>
+  <div class="modal">
+    <div class="modal__block">
+      <div class="modal__text">Удалить выбранные поля?</div>
+      <div class="modal__btn-cont">
+        <button class="modal__btn-remove btn">Удалить</button>
+        <button class="modal__btn-cancel btn">Отмена</button>
+      </div>
+    </div>
+  </div>
+  <div class="form-alert">
+    <div class="form-aler__text">
+      Форма отправлена, подробнее в devtools!
+    </div>
+  </div>
   </div>
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/form.js"></script>
   <script src="./assets/js/addRow.js"></script>
+  <script src="./assets/js/removeRow.js"></script>
+  <script src="./assets/js/inputSearch.js"></script>
+  <script src="./assets/js/modal-window.js"></script>
+  <script src="./assets/js/burger.js"></script>
 </body>
 </html>
